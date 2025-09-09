@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Card from "./Card.jsx";
-import styles from "../styles/ShowcaseCard.module.css";
 import PropTypes from "prop-types";
 
 function ShowcaseCard({ productObj, orderCallback, order }) {
@@ -13,7 +12,6 @@ function ShowcaseCard({ productObj, orderCallback, order }) {
         productId: productObj.id,
         amount: amount,
       }),
-    className: styles["add-to-cart"],
   };
 
   function handleAmountChange(newAmount) {
@@ -34,7 +32,7 @@ function ShowcaseCard({ productObj, orderCallback, order }) {
   }
 
   return (
-    <div className={styles.card}>
+    <div className="p-8 p-4 grid grid-rows-1 bg-blue-50 shadow-md align-content-end">
       <Card
         productObj={productObj}
         amountCallback={handleAmountChange}
