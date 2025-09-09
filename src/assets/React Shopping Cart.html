@@ -1,146 +1,182 @@
-<!DOCTYPE html>
+<!doctype html>
 <!-- saved from url=(0025)http://localhost:5173/asd -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <script type="module">
-import RefreshRuntime from "/@react-refresh"
-RefreshRuntime.injectIntoGlobalHook(window)
-window.$RefreshReg$ = () => {}
-window.$RefreshSig$ = () => (type) => type
-window.__vite_plugin_react_preamble_installed__ = true
-</script>
+      import RefreshRuntime from "/@react-refresh";
+      RefreshRuntime.injectIntoGlobalHook(window);
+      window.$RefreshReg$ = () => {};
+      window.$RefreshSig$ = () => (type) => type;
+      window.__vite_plugin_react_preamble_installed__ = true;
+    </script>
 
     <script type="module" src="./React Shopping Cart_files/client"></script>
 
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>React Shopping Cart</title>
-  <style type="text/css" data-vite-dev-id="/home/karlo19/repos/the-odin-project/shopping-cart/src/App.css"></style><style type="text/css" data-vite-dev-id="/home/karlo19/repos/the-odin-project/shopping-cart/src/styles/Navbar.module.css">._navbar_1cfit_1 {
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  gap: 2rem;
+    <style
+      type="text/css"
+      data-vite-dev-id="/home/karlo19/repos/the-odin-project/shopping-cart/src/App.css"
+    ></style>
+    <style
+      type="text/css"
+      data-vite-dev-id="/home/karlo19/repos/the-odin-project/shopping-cart/src/styles/Navbar.module.css"
+    >
+      ._navbar_1cfit_1 {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        gap: 2rem;
 
-  height: 8vh;
-  padding: 0 8rem;
-  background-color: rgb(62, 100, 206);
-}
+        height: 8vh;
+        padding: 0 8rem;
+        background-color: rgb(62, 100, 206);
+      }
 
-._navbar_1cfit_1 a {
-  font-size: 2rem;
-  color: white;
-  text-decoration: none;
-}
+      ._navbar_1cfit_1 a {
+        font-size: 2rem;
+        color: white;
+        text-decoration: none;
+      }
 
-._cart-div_1cfit_18 {
-  display: grid;
+      ._cart-div_1cfit_18 {
+        display: grid;
 
-  position: relative;
-  height: 100%;
-}
+        position: relative;
+        height: 100%;
+      }
 
-._cart_1cfit_18 {
-  height: calc(100% - 1rem);
-  align-self: center;
-  filter: brightness(0) saturate(100%) invert(99%) sepia(99%) saturate(36%)
-    hue-rotate(330deg) brightness(109%) contrast(99%);
-}
+      ._cart_1cfit_18 {
+        height: calc(100% - 1rem);
+        align-self: center;
+        filter: brightness(0) saturate(100%) invert(99%) sepia(99%)
+          saturate(36%) hue-rotate(330deg) brightness(109%) contrast(99%);
+      }
 
-._product-num_1cfit_32 {
-  position: absolute;
-  bottom: 0.4rem;
-  right: -0.4rem;
+      ._product-num_1cfit_32 {
+        position: absolute;
+        bottom: 0.4rem;
+        right: -0.4rem;
 
-  padding: 0 5px;
-  height: 1.7rem;
-  width: 1.7rem;
-  background-color: red;
-  border-radius: 0.2rem;
-}
+        padding: 0 5px;
+        height: 1.7rem;
+        width: 1.7rem;
+        background-color: red;
+        border-radius: 0.2rem;
+      }
 
-._product-num_1cfit_32 span {
-  position: absolute;
+      ._product-num_1cfit_32 span {
+        position: absolute;
 
-  font-size: 1.5rem;
-  font-weight: 600;
-  transform: translate(10%, -15%);
-}
+        font-size: 1.5rem;
+        font-weight: 600;
+        transform: translate(10%, -15%);
+      }
 
-._product-num_1cfit_32 span._product-overflow_1cfit_52 {
-  transform: translate(-25%, -15%);
-}
-</style><style type="text/css" data-vite-dev-id="/home/karlo19/repos/the-odin-project/shopping-cart/src/styles/Checkout.module.css">._successDiv_ekn5b_1 {
-  background-color: aquamarine;
-}
+      ._product-num_1cfit_32 span._product-overflow_1cfit_52 {
+        transform: translate(-25%, -15%);
+      }
+    </style>
+    <style
+      type="text/css"
+      data-vite-dev-id="/home/karlo19/repos/the-odin-project/shopping-cart/src/styles/Checkout.module.css"
+    >
+      ._successDiv_ekn5b_1 {
+        background-color: aquamarine;
+      }
 
-._failDiv_ekn5b_5 {
-  background-color: crimson;
-}
-</style><style type="text/css" data-vite-dev-id="/home/karlo19/repos/the-odin-project/shopping-cart/src/index.css">@import url("https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap");
+      ._failDiv_ekn5b_5 {
+        background-color: crimson;
+      }
+    </style>
+    <style
+      type="text/css"
+      data-vite-dev-id="/home/karlo19/repos/the-odin-project/shopping-cart/src/index.css"
+    >
+      @import url("https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap");
 
-.suse-default {
-  font-family: "SUSE", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-}
+      .suse-default {
+        font-family: "SUSE", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+      }
 
-:root {
-  font-family: "SUSE", "Courier New", Courier, monospace;
-}
-</style><style type="text/css" data-vite-dev-id="/home/karlo19/repos/the-odin-project/shopping-cart/src/default.css">/*
+      :root {
+        font-family: "SUSE", "Courier New", Courier, monospace;
+      }
+    </style>
+    <style
+      type="text/css"
+      data-vite-dev-id="/home/karlo19/repos/the-odin-project/shopping-cart/src/default.css"
+    >
+      /*
   Josh's Custom CSS Reset
   https://www.joshwcomeau.com/css/custom-css-reset/
 */
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
 
-* {
-  margin: 0;
-}
+      * {
+        margin: 0;
+      }
 
-body {
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-}
+      body {
+        line-height: 1.5;
+        -webkit-font-smoothing: antialiased;
+      }
 
-img,
-picture,
-video,
-canvas,
-svg {
-  display: block;
-  max-width: 100%;
-}
+      img,
+      picture,
+      video,
+      canvas,
+      svg {
+        display: block;
+        max-width: 100%;
+      }
 
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
+      input,
+      button,
+      textarea,
+      select {
+        font: inherit;
+      }
 
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  overflow-wrap: break-word;
-}
+      p,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        overflow-wrap: break-word;
+      }
 
-#root,
-#__next {
-  isolation: isolate;
-}
-</style></head>
+      #root,
+      #__next {
+        isolation: isolate;
+      }
+    </style>
+  </head>
   <body>
-    <div id="root"><div class="_navbar_1cfit_1"><a href="http://localhost:5173/">Homepage</a><a class="_cart-div_1cfit_18" href="http://localhost:5173/shopping-cart"><img class="_cart_1cfit_18" src="./React Shopping Cart_files/cart-outline.svg" alt="Shopping cart displaying amount of items in cart"></a></div></div>
+    <div id="root">
+      <div class="_navbar_1cfit_1">
+        <a href="http://localhost:5173/">Homepage</a
+        ><a
+          class="_cart-div_1cfit_18"
+          href="http://localhost:5173/shopping-cart"
+          ><img
+            class="_cart_1cfit_18"
+            src="./React Shopping Cart_files/cart-outline.svg"
+            alt="Shopping cart displaying amount of items in cart"
+        /></a>
+      </div>
+    </div>
     <script type="module" src="./React Shopping Cart_files/main.jsx"></script>
-  
-
-</body></html>
+  </body>
+</html>

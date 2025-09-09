@@ -46,4 +46,3 @@ ShoppingCartIcon.propTypes = {
 };
 
 export default Navbar;
-

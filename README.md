@@ -6,4 +6,5 @@
 </p>
 
 ## Live application:
+
 Here you can try this shopping cart app: <a>https://react-shopping-cart-kc.netlify.app/</a>
