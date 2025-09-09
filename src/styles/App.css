@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+:root {
+  --white-filter: brightness(0) saturate(100%) invert(99%) sepia(99%)
+    saturate(36%) hue-rotate(330deg) brightness(109%) contrast(99%);
+}
+
 h1 {
   font-size: 3rem;
   padding-bottom: 3rem;
