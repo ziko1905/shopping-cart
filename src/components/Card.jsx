@@ -9,13 +9,13 @@ function Card({ productObj, amountCallback, amount = 0, addOnBtns = [] }) {
 
   return (
     <>
-      <h3 className="text-lg font-semibold mb-2">{title}</h3>
+      <h3 className="text-lg font-semibold mb-2 row-2">{title}</h3>
       <img
         className="product-image mx-auto mb-4 max-w-full h-auto"
         alt={"Image of the item"}
         src={src}
       ></img>
-      <div className="grid grid-cols-3 gap-1.5 mt-8 mb-4 items-center justify-center">
+      <div className="grid grid-cols-3 gap-[5px] mt-8 mb-4 items-center justify-center">
         <button
           className="bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded-l"
           onClick={() => amountCallback(amount - 1)}
@@ -24,7 +24,7 @@ function Card({ productObj, amountCallback, amount = 0, addOnBtns = [] }) {
           -
         </button>
         <input
-          className="text-center border-t border-b border-gray-300 py-2 px-4 w-full"
+          className="text-center shadow bg-neutral-50 border-gray-300 py-2 px-4 w-full"
           onChange={(e) => amountCallback(e.target.value)}
           value={amount}
           aria-label="Input for changing amount with current amount"

@@ -32,7 +32,7 @@ function ShowcaseCard({ productObj, orderCallback, order }) {
   }
 
   return (
-    <div className="p-8 p-4 grid grid-rows-1 bg-blue-50 shadow-md align-content-end">
+    <div className="p-[2rem_1rem] grid grid-rows-1 bg-blue-50 shadow-md align-content-end">
       <Card
         productObj={productObj}
         amountCallback={handleAmountChange}
