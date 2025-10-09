@@ -1,6 +1,5 @@
 import categoryFilter from "../helper-functions/categoryFilter";
 import ShowcaseCard from "../ShowcaseCard";
-import styles from "../../styles/Homepage.module.css";
 import PropTypes from "prop-types";
 
 function Homepage({ productList = [], order, orderCallback }) {
@@ -17,14 +16,17 @@ function Homepage({ productList = [], order, orderCallback }) {
   }
   return (
     <div className="content">
-      <h1>Homepage</h1>
+      <h1 className="font-extrabold">Homepage</h1>
       {categoriesList.map((category) => {
         return (
           <div key={category}>
-            <h2 className={styles.categoryName} data-testid="category-heading">
+            <h2
+              className="col-span-full font-bold text-3xl"
+              data-testid="category-heading"
+            >
               {toUpperCase(category)}
             </h2>
-            <div className={styles.category}>
+            <div className="grid [grid-template-columns:repeat(auto-fit,_calc(15rem))] justify-between gap-[2rem] p-[1rem_0] mb-[4rem]">
               {productsByCategories[category].map((id) => (
                 <ShowcaseCard
                   order={order}
